@@ -14,4 +14,6 @@ RUN jupyter nbextension enable toc2/main
 RUN jupyter nbextension enable spellchecker/main
 RUN jupyter nbextension enable collapsible_headings/main
 ENV PYTHONPATH="${HOME}/notebooks${PYTHONPATH}"
-RUN git clone https://github.com/sjoerddehaan/ml-course-2018
+RUN git clone https://github.com/sjoerddehaan/ml-course-2018/
+RUN cd ml-course-2018
+RUN git checkout 30668bcd6fcbcc76dd119b1ae5dfcb07f93717e7
